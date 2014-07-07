@@ -7,4 +7,4 @@ before_install:
   - brew install xctool
 
 script:
-  - xctool test -project iOSUnitTesting/iOSUnitTesting.xcodeproj -scheme iOSUnitTesting -sdk iphonesimulator
+  - xctool test -workspace iOSUnitTesting/iOSUnitTesting.xcworkspace -scheme iOSUnitTesting -sdk iphonesimulator
