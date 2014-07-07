@@ -1,0 +1,10 @@
+language: objective-c
+rvm: 1.9.3
+
+before_install:
+  - brew unlink xctool
+  - brew update
+  - brew install xctool
+
+script:
+  - xctool test -project iOSUnitTesting/iOSUnitTesting.xcodeproj -scheme iOSUnitTesting -sdk iphonesimulator
